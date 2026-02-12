@@ -56,7 +56,7 @@ export function ComponentInfoSection({
         <section className="space-y-4">
           <div className="flex items-center gap-2">
             <Palette className="h-5 w-5 text-primary" />
-            <h2 className="text-xl font-semibold">Why Choose Spectrum UI {componentName}?</h2>
+            <h2 className="text-xl font-semibold">Why Choose Imoogle UI {componentName}?</h2>
           </div>
           <ul className="space-y-2">
             {advantages.map((advantage, index) => (

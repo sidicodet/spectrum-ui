@@ -1,15 +1,15 @@
 export const siteConfig = {
-  name: "Spectrum UI - Best React UI Component Library for Next.js",
-  url: "https://ui.spectrumhq.in",
+  name: "Imoogle UI - Premium React UI Component Library for Next.js",
+  url: "https://ui.imoogleai.xyz",
   ogImage: {
-    url: "https://ui.spectrumhq.in/og.png",
+    url: "https://ui.imoogleai.xyz/og.png",
     width: 1200,
     height: 630,
-    alt: "Spectrum UI - React UI Components Library for Next.js with Tailwind CSS",
+    alt: "Imoogle UI - Premium React UI Components Library for Next.js with Tailwind CSS",
   },
   description:
-    "The best React UI component library for Next.js. 250+ beautifully designed, accessible components built with Tailwind CSS and TypeScript. Copy, paste, and ship faster. Perfect for dashboards, SaaS, and modern web applications. Free and open source alternative to shadcn/ui, Material UI, and Chakra UI.",
-  shortDescription: "Best React UI component library for Next.js with Tailwind CSS - Free, accessible, and production-ready",
+    "Premium React UI component library for Next.js by Imoogle Technology. 250+ beautifully designed, accessible components built with Tailwind CSS and TypeScript. Copy, paste, and ship faster. Perfect for dashboards, SaaS, and modern web applications.",
+  shortDescription: "Premium React UI component library for Next.js with Tailwind CSS - Accessible and production-ready by Imoogle Technology",
   keywords: [
     // Primary Keywords
     "React UI components",
@@ -17,7 +17,8 @@ export const siteConfig = {
     "UI library",
     "design system",
     "modern UI components",
-    "Spectrum UI",
+    "Imoogle UI",
+    "Imoogle Technology",
     
     // Next.js Keywords
     "Next.js components",
@@ -52,7 +53,6 @@ export const siteConfig = {
     "React TypeScript components",
     "React hooks components",
     "React server components",
-    "React components 2024",
     "best React UI library",
     
     // Frontend Development Keywords
@@ -65,14 +65,6 @@ export const siteConfig = {
     "responsive components",
     "mobile-first components",
     "progressive web app components",
-    
-    // Vercel Keywords
-    "Vercel components",
-    "Vercel Next.js components",
-    "Vercel deployment",
-    "Vercel UI library",
-    "Vercel design system",
-    "deploy with Vercel",
     
     // Component-Specific Keywords
     "React button component",
@@ -121,15 +113,12 @@ export const siteConfig = {
     "Material UI alternative",
     "Chakra UI alternative",
     "Ant Design alternative",
-    "better than shadcn",
-    "best UI library 2024",
+    "best UI library",
     "UI library comparison",
     
     // Action Keywords
     "copy paste components",
-    "free UI components",
-    "open source UI library",
-    "download UI components",
+    "premium UI components",
     "UI component templates",
     "ready-to-use components",
     "production-ready components",
@@ -141,15 +130,6 @@ export const siteConfig = {
     "Framer Motion components",
     "React Hook Form components",
     "Zod validation components",
-    "Prisma UI components",
-    
-    // Learning Keywords
-    "React components tutorial",
-    "how to build UI components",
-    "React UI examples",
-    "component library guide",
-    "UI design patterns",
-    "React best practices",
     
     // Quality Keywords
     "professional UI components",
@@ -161,45 +141,36 @@ export const siteConfig = {
     
     // Additional Long-tail Keywords
     "React component library with Tailwind",
-    "Next.js component library free",
     "best React component library for startups",
     "accessible React UI components",
     "React components for dashboards",
     "modern design system for React",
     "copy paste React components",
-    "free Tailwind components",
     "React UI components with TypeScript",
-    "Next.js 14 app router components",
+    "Next.js app router components",
   ],
   links: {
-    twitter: "https://x.com/arihantcodes",
-    github: "https://github.com/arihantcodes/spectrum-ui",
-    linkedin: "https://www.linkedin.com/in/arihantcodes",
-    instagram: "https://www.instagram.com/arihantjainn18",
-    discord: "https://discord.gg/spectrum-ui", // Add if you have one
+    twitter: "https://x.com/imoogletechnology",
+    linkedin: "https://www.linkedin.com/company/imoogletechnology",
+    website: "https://imoogleai.xyz",
   },
   author: {
-    name: "Arihant Jain",
-    url: "https://ui.spectrumhq.in",
-    twitter: "@arihantcodes",
-    github: "arihantcodes",
+    name: "Imoogle Technology",
+    url: "https://imoogleai.xyz",
+    twitter: "@imoogletechnology",
   },
   creator: {
-    name: "Arihant Jain",
-    url: "https://ui.spectrumhq.in",
+    name: "Imoogle Technology",
+    url: "https://imoogleai.xyz",
   },
   locale: "en-US",
   version: "1.0.0",
-  license: "MIT",
-  repository: {
-    type: "git",
-    url: "https://github.com/arihantcodes/spectrum-ui",
-  },
+  license: "Proprietary",
   // Enhanced SEO metadata
   seo: {
     title: {
-      default: "Spectrum UI - Beautiful React Components",
-      template: "%s | Spectrum UI",
+      default: "Imoogle UI - Premium React Components",
+      template: "%s | Imoogle UI",
     },
     robots: {
       index: true,
@@ -213,9 +184,9 @@ export const siteConfig = {
       },
     },
     verification: {
-      google: "", // Add your Google Search
-      yandex: "", // Add if needed
-      yahoo: "", // Add if needed
+      google: "",
+      yandex: "",
+      yahoo: "",
     },
   },
   // Categories for better organization
@@ -236,25 +207,21 @@ export const siteConfig = {
   // Social media handles
   social: {
     twitter: {
-      handle: "@arihantcodes",
-      site: "@spectrumui",
+      handle: "@imoogletechnology",
+      site: "@imoogleui",
       cardType: "summary_large_image",
-    },
-    github: {
-      username: "arihantcodes",
-      repository: "spectrum-ui",
     },
   },
   // Analytics and tracking
   analytics: {
-    googleAnalytics: "", // Add your GA4 measurement ID
-    plausible: "", // Add if using Plausible
+    googleAnalytics: "",
+    plausible: "",
   },
   // Manifest data for PWA
   manifest: {
-    name: "Spectrum UI",
-    shortName: "SpectrumUI",
-    description: "Beautiful React components for modern web applications",
+    name: "Imoogle UI",
+    shortName: "ImoogleUI",
+    description: "Premium React components for modern web applications by Imoogle Technology",
     startUrl: "/",
     display: "standalone",
     backgroundColor: "#ffffff",
@@ -297,7 +264,7 @@ export const navigation = {
     {
       title: "Documentation",
       href: "/docs",
-      description: "Learn how to use Spectrum UI",
+      description: "Learn how to use Imoogle UI",
     },
     {
       title: "Templates",

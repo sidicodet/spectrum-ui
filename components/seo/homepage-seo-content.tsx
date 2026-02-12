@@ -8,7 +8,7 @@ export function HomePageSEOContent() {
       {/* Main Value Proposition */}
       <section className="text-center space-y-4">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          The Best React UI Component Library for Modern Web Development
+          The Premium React UI Component Library for Modern Web Development
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Build faster with 50+ beautifully designed, fully accessible React components.
@@ -107,10 +107,10 @@ export function HomePageSEOContent() {
       <section className="space-y-6">
         <div className="text-center space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">
-            Why Developers Choose Spectrum UI Over Other React UI Libraries
+            Why Developers Choose Imoogle UI Over Other React UI Libraries
           </h2>
           <p className="text-muted-foreground">
-            See how Spectrum UI compares to popular alternatives like Material UI, Chakra UI, and shadcn/ui
+            See how Imoogle UI compares to popular alternatives like Material UI, Chakra UI, and shadcn/ui
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export function HomePageSEOContent() {
             <thead>
               <tr className="border-b bg-muted/50">
                 <th className="p-4 text-left font-semibold">Feature</th>
-                <th className="p-4 text-center font-semibold">Spectrum UI</th>
+                <th className="p-4 text-center font-semibold">Imoogle UI</th>
                 <th className="p-4 text-center font-semibold">Material UI</th>
                 <th className="p-4 text-center font-semibold">Chakra UI</th>
                 <th className="p-4 text-center font-semibold">shadcn/ui</th>
@@ -162,11 +162,11 @@ export function HomePageSEOContent() {
                 <td className="p-4 text-center">40+</td>
               </tr>
               <tr>
-                <td className="p-4">Free & Open Source</td>
+                <td className="p-4">Premium Support</td>
                 <td className="p-4 text-center text-green-500">✓</td>
-                <td className="p-4 text-center text-green-500">✓</td>
-                <td className="p-4 text-center text-green-500">✓</td>
-                <td className="p-4 text-center text-green-500">✓</td>
+                <td className="p-4 text-center text-muted-foreground">Paid</td>
+                <td className="p-4 text-center text-muted-foreground">Paid</td>
+                <td className="p-4 text-center text-muted-foreground">Community</td>
               </tr>
             </tbody>
           </table>
@@ -245,7 +245,7 @@ export function HomePageSEOContent() {
           Start Building Beautiful React UIs Today
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Join thousands of developers using Spectrum UI to build modern web applications.
+          Join developers using Imoogle UI to build modern web applications.
           Get started in minutes with our comprehensive documentation and examples.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

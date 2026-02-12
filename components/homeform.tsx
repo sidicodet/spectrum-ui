@@ -171,7 +171,7 @@ const Homeform = () => {
                 name="feedbackLike"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>What do you like most about Spectrum UI?</FormLabel>
+                    <FormLabel>What do you like most about Imoogle UI?</FormLabel>
                     <FormControl>
                       <Textarea placeholder="Share what stands out to you..." {...field} />
                     </FormControl>

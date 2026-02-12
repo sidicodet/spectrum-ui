@@ -6,7 +6,7 @@ export const runtime = 'edge';
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    const title = searchParams.get('title') || 'Spectrum UI';
+    const title = searchParams.get('title') || 'Imoogle UI';
     const description = searchParams.get('description') || 'Beautiful React Components';
 
     return new ImageResponse(
@@ -68,7 +68,7 @@ export async function GET(request: NextRequest) {
                 alignItems: 'center',
               }}
             >
-              Spectrum UI • React Components
+              Imoogle UI • React Components by Imoogle Technology
             </div>
           </div>
         </div>

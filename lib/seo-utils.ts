@@ -1,7 +1,7 @@
 import { ROUTES } from "./routes-config";
 
 /**
- * SEO utility functions for Spectrum UI
+ * SEO utility functions for Imoogle UI
  */
 
 // Component categories for better organization and SEO
@@ -61,11 +61,10 @@ export function generateComponentStructuredData(component: {
     description: component.description,
     programmingLanguage: "TypeScript",
     runtimePlatform: "React",
-    codeRepository: "https://github.com/arihantcodes/spectrum-ui",
     author: {
-      "@type": "Person",
-      name: "Arihant Jain",
-      url: "https://ui.spectrumhq.in",
+      "@type": "Organization",
+      name: "Imoogle Technology",
+      url: "https://imoogleai.xyz",
     },
     about: {
       "@type": "Thing",
@@ -163,7 +162,7 @@ export function generateSEODescription(component: {
   shortDescription?: string;
 }): string {
   const base = `Learn how to use the ${component.name} component in React. ${component.shortDescription || ''} Built with Tailwind CSS and fully accessible.`;
-  return `${base} Copy, paste, and customize for your Next.js applications. Free and open source.`;
+  return `${base} Copy, paste, and customize for your Next.js applications. Built by Imoogle Technology.`;
 }
 
 // Generate blog post structured data
@@ -188,16 +187,16 @@ export function generateBlogStructuredData(blogPost: {
     author: {
       "@type": "Person",
       name: blogPost.author.name,
-      image: blogPost.author.avatar || "https://ui.spectrumhq.in/arihant.jpeg",
-      url: "https://ui.spectrumhq.in",
+      image: blogPost.author.avatar || "https://ui.imoogleai.xyz/logo.svg",
+      url: "https://imoogleai.xyz",
     },
     publisher: {
       "@type": "Organization",
-      name: "Spectrum UI",
-      url: "https://ui.spectrumhq.in",
+      name: "Imoogle Technology",
+      url: "https://ui.imoogleai.xyz",
       logo: {
         "@type": "ImageObject",
-        url: "https://ui.spectrumhq.in/logo.svg",
+        url: "https://ui.imoogleai.xyz/logo.svg",
       },
     },
     mainEntityOfPage: {
@@ -267,16 +266,16 @@ export function generateBlogListingStructuredData(posts: Array<{
   return {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "Spectrum UI Blog",
-    description: "Learn about UI components, React development, and design systems with Spectrum UI",
-    url: "https://ui.spectrumhq.in/blog",
+    name: "Imoogle UI Blog",
+    description: "Learn about UI components, React development, and design systems with Imoogle UI",
+    url: "https://ui.imoogleai.xyz/blog",
     publisher: {
       "@type": "Organization",
-      name: "Spectrum UI",
-      url: "https://ui.spectrumhq.in",
+      name: "Imoogle Technology",
+      url: "https://ui.imoogleai.xyz",
       logo: {
         "@type": "ImageObject",
-        url: "https://ui.spectrumhq.in/logo.svg",
+        url: "https://ui.imoogleai.xyz/logo.svg",
       },
     },
     blogPost: posts.map(post => ({

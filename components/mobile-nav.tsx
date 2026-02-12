@@ -250,7 +250,7 @@ export function MobileNav() {
           className="flex items-center h-16 px-4 border-b border-border"
         >
           <Icons.logo className="mr-2 size-4" />
-          <span className="font-semibold">Spectrum UI</span>
+          <span className="font-semibold">Imoogle UI</span>
         </Link>
         <ScrollArea className="h-[calc(100vh-4rem)] flex-1">
           <div className="flex flex-col space-y-4 p-4">

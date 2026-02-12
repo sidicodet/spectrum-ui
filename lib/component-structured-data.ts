@@ -34,24 +34,19 @@ export function generateComponentStructuredData({
       applicationCategory: "WebApplication",
       url: "https://reactjs.org/",
     },
-    codeRepository: {
-      "@type": "SoftwareSourceCode",
-      url: siteConfig.repository.url,
-      codeRepository: siteConfig.repository.url,
-    },
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       name: siteConfig.author.name,
       url: siteConfig.author.url,
       sameAs: [
-        siteConfig.links.github,
         siteConfig.links.twitter,
         siteConfig.links.linkedin,
+        siteConfig.links.website,
       ],
     },
     publisher: {
       "@type": "Organization",
-      name: "Spectrum UI",
+      name: "Imoogle Technology",
       url: baseUrl,
       logo: {
         "@type": "ImageObject",
@@ -64,14 +59,7 @@ export function generateComponentStructuredData({
       name: "React UI Component",
       description: "A reusable UI component for React and Next.js applications",
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-    },
     inLanguage: "en-US",
-    isAccessibleForFree: true,
     license: siteConfig.license,
   };
 }

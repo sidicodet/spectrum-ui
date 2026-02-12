@@ -32,14 +32,14 @@ export function ComponentComparison({
         {componentName} Comparison
       </h2>
       <p className="mb-4 text-sm text-muted-foreground">
-        See how Spectrum UI {componentName} compares to {comparisonWith}
+        See how Imoogle UI {componentName} compares to {comparisonWith}
       </p>
       <div className="overflow-x-auto rounded-lg border">
         <Table>
           <TableHeader>
             <TableRow>
               <TableHead className="font-semibold">Feature</TableHead>
-              <TableHead className="font-semibold">Spectrum UI</TableHead>
+              <TableHead className="font-semibold">Imoogle UI</TableHead>
               <TableHead className="font-semibold">{comparisonWith}</TableHead>
             </TableRow>
           </TableHeader>
