@@ -9,7 +9,7 @@ export default function Component() {
         {/* Header */}
         <div className="space-y-1">
           <div className="text-sm ">Installation</div>
-          <h1 className="text-2xl font-bold">Spectrum UI</h1>
+          <h1 className="text-2xl font-bold">Imoogle UI</h1>
           <p className="">Install and configure Next.js.</p>
         </div>
 

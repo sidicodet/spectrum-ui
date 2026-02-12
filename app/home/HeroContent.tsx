@@ -3,32 +3,10 @@ import { AnimatedBadge } from './AnimatedBadge';
 import { AnimateEnter } from './AnimateEnter';
 import { GridBackground } from './GridBackground';
 import { Button } from '@/components/ui/button';
-import { Icons } from '@/components/icon';
-import { NumberTicker } from '@/components/magicui/number-ticker';
 import Link from 'next/link';
-import { siteConfig } from '@/config/site';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { Mail, ArrowRight } from 'lucide-react';
 
 export function HeroContent() {
-  const [star, setStar] = useState(0);
-  const fetchGithubData = () => {
-    axios
-      .get('https://api.github.com/repos/arihantcodes/spectrum-ui')
-      .then((response) => {
-        const star = response.data.stargazers_count;
-        setStar(star);
-      })
-      .catch((error) => {});
-  };
-
-  useEffect(() => {
-    // Defer non-critical API call to avoid blocking render
-    const timeoutId = setTimeout(() => {
-      fetchGithubData();
-    }, 100);
-    return () => clearTimeout(timeoutId);
-  }, []);
   return (
     <div className="z-[3] flex flex-col items-center gap-16 sm:gap-28 text-center">
       <div>
@@ -38,16 +16,16 @@ export function HeroContent() {
           </AnimateEnter>
           <AnimateEnter delay={0.3} duration={2}>
             <h1 className="mx-auto text-center max-w-5xl px-4 font-bold text-2xl md:text-6xl leading-tight tracking-tight">
-              <span className="block text-gradient mb-1">Instant UI Components</span>
+              <span className="block text-gradient mb-1">Premium UI Components</span>
               <span className="">
-                Just Copy, Paste &amp; Done
+                Just Copy, Paste &amp; Ship
               </span>
             </h1>
           </AnimateEnter>
         </div>
         <AnimateEnter delay={0.5} duration={2} className="mb-6 sm:mb-8">
-          <p className="container mx-auto  md:max-w-lg text-[12px] sm:text-base text-foreground">
-            250+ Production ready components, built with Next.js, shadcn/ui and Tailwind CSS.
+          <p className="container mx-auto md:max-w-xl text-[12px] sm:text-base text-foreground leading-relaxed">
+            250+ Production-ready components crafted by Imoogle Technology. Built with Next.js, shadcn/ui, and Tailwind CSS for modern web applications.
           </p>
         </AnimateEnter>
         <AnimateEnter className="flex items-center justify-center gap-3" delay={0.7} duration={2}>
@@ -55,20 +33,16 @@ export function HeroContent() {
             <Link href="/docs/installation" className="w-full sm:w-auto">
               <Button size="lg" className="rounded-2xl w-full sm:w-auto px-8">
                 Explore Components
+                <ArrowRight className="ml-2 size-4" />
               </Button>
             </Link>
 
             <div className="w-full sm:w-auto">
-              <Link target="_blank" href={siteConfig.links.github}>
+              <Link href="mailto:info@imoogleai.xyz">
                 <Button variant="secondary" className="rounded-2xl w-full sm:w-auto px-8 h-11">
-                  <div className="flex items-center">
-                    <Icons.gitHub className="size-4" />
-
-                    <span className="ml-1 ">Star on GitHub</span>
-                  </div>
-                  <div className="ml-1 flex items-center gap-1 text-sm md:flex">
-                    🌟
-                    <NumberTicker value={star} className="font-display" />
+                  <div className="flex items-center gap-2">
+                    <Mail className="size-4" />
+                    <span>Get in Touch</span>
                   </div>
                 </Button>
               </Link>
@@ -76,10 +50,10 @@ export function HeroContent() {
           </div>
         </AnimateEnter>
       </div>
-      <section className="w-full max-w-4xl mx-auto px-4 ">
+      <section className="w-full max-w-4xl mx-auto px-4">
         <AnimateEnter delay={0.9} duration={2} className="space-y-6">
           <h2 className="text-base font-medium text-muted-foreground uppercase tracking-wider">
-            Built With
+            Powered By
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 place-items-center">
             <Image

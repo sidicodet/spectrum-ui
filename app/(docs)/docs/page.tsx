@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -13,11 +13,11 @@ export default function IntroductionPage() {
     <div className="max-w-4xl mx-auto space-y-12 py-8">
       {/* Hero Section */}
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">Spectrum UI</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Imoogle UI</h1>
         <p className="text-xl text-muted-foreground">
-          Beautifully designed components built with Aceternity UI ,ShadCN UI
-          and MAGIC UI a that you can copy and paste into your apps. Accessible.
-          Customizable. Open Source.
+          Beautifully designed components built with Aceternity UI, ShadCN UI,
+          and Magic UI that you can copy and paste into your apps. Accessible.
+          Customizable. Crafted by Imoogle Technology.
         </p>
         <div className="flex gap-4">
           <Button asChild>
@@ -26,9 +26,9 @@ export default function IntroductionPage() {
             </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href="https://github.com/arihantcodes/spectrum-ui">
-              <Github className="mr-2 h-4 w-4" />
-              GitHub
+            <Link href="mailto:info@imoogleai.xyz">
+              <Mail className="mr-2 h-4 w-4" />
+              Contact Us
             </Link>
           </Button>
         </div>
@@ -39,7 +39,7 @@ export default function IntroductionPage() {
         <h2 className="text-3xl font-bold tracking-tight">Introduction</h2>
         <div className="text-muted-foreground space-y-4">
           <p>
-            Spectrum UI is a collection of re-usable components built using{" "}
+            Imoogle UI is a collection of re-usable components built using{" "}
             <Link
               href="https://ui.aceternity.com/"
               className="font-medium underline underline-offset-4"
@@ -67,8 +67,8 @@ export default function IntroductionPage() {
                 What do you mean by copy and paste?
               </h3>
               <p>
-                Spectrum UI is not a component library. It&apos;s a collection
-                of re-usable components that you can copy and paste into your
+                Imoogle UI is not a traditional component library. It&apos;s a curated
+                collection of re-usable components that you can copy and paste into your
                 projects.
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function IntroductionPage() {
           <AccordionItem value="item-1">
             <AccordionTrigger>Is this a component library?</AccordionTrigger>
             <AccordionContent>
-              No. Spectrum UI is not a component library. It&apos;s a collection
+              No. Imoogle UI is not a component library. It&apos;s a collection
               of re-usable components that you can copy and paste into your
               projects.
             </AccordionContent>
@@ -100,8 +100,8 @@ export default function IntroductionPage() {
           <AccordionItem value="item-2">
             <AccordionTrigger>Can I use this in my project?</AccordionTrigger>
             <AccordionContent>
-              Yes. Free to use for personal and commercial projects. No
-              attribution required.
+              Imoogle UI components are available for use in your projects. 
+              Contact us at info@imoogleai.xyz for licensing details.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -122,13 +122,20 @@ export default function IntroductionPage() {
       </div>
 
       {/* Credits Section */}
-      <div className="space-y-4 ">
+      <div className="space-y-4">
         <h2 className="text-3xl font-bold tracking-tight">Credits</h2>
         <p className="text-muted-foreground gap-4">
-          Built with{" "}
+          Built by{" "}
+          <Link
+            href="https://imoogleai.xyz"
+            className="font-medium underline underline-offset-4 mr-1"
+          >
+            Imoogle Technology
+          </Link>
+          {" "}with{" "}
           <Link
             href="https://ui.aceternity.com/"
-            className="font-medium underline underline-offset-4 mr-2"
+            className="font-medium underline underline-offset-4 mr-1"
           >
             Aceternity UI
           </Link>

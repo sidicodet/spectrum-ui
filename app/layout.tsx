@@ -81,14 +81,14 @@ export const metadata: Metadata = {
     "shadcn ui alternative",
     "Material UI alternative",
     "Chakra UI alternative",
-    "best React UI library 2024",
-    "free UI component library",
-    "open source design system",
+    "best React UI library",
+    "premium UI component library",
+    "Imoogle UI",
+    "Imoogle Technology",
     
     // Action & Intent Keywords
     "copy paste components",
-    "download React components",
-    "free Tailwind components",
+    "premium React components",
     "React UI kit",
     "UI template library",
     "component code snippets",
@@ -121,7 +121,7 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Spectrum UI",
+      name: "Imoogle Technology",
       url: siteConfig.url,
     },
     {
@@ -129,8 +129,8 @@ export const metadata: Metadata = {
       url: siteConfig.author.url,
     },
   ],
-  creator: "Arihant Jain",
-  publisher: "Spectrum UI",
+  creator: "Imoogle Technology",
+  publisher: "Imoogle UI",
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -145,8 +145,8 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage.url],
-    creator: "@arihantcodes",
-    site: "@spectrumui",
+    creator: "@imoogletechnology",
+    site: "@imoogleui",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
   robots: {
@@ -186,8 +186,6 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href={siteConfig.url} />
         {/* Preconnect to external domains for faster loading */}
-        <link rel="preconnect" href="https://api.github.com" />
-        <link rel="dns-prefetch" href="https://api.github.com" />
         {/* Preload critical fonts */}
         <link
           rel="preload"
@@ -241,19 +239,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Spectrum UI",
+              name: "Imoogle Technology",
               url: siteConfig.url,
               logo: `${siteConfig.url}/logo.svg`,
               description: siteConfig.description,
               founder: {
-                "@type": "Person",
+                "@type": "Organization",
                 name: siteConfig.author.name,
                 url: siteConfig.author.url,
               },
               sameAs: [
-                siteConfig.links.github,
                 siteConfig.links.twitter,
                 siteConfig.links.linkedin,
+                siteConfig.links.website,
               ],
             }),
           }}

@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
           <!-- Header -->
           <div style="background:#171717;padding:32px;text-align:center">
             <h1 style="margin:0;color:#ffffff;font-size:24px;font-weight:600;letter-spacing:-0.025em">New Contact Form Submission</h1>
-            <p style="margin:8px 0 0;color:#a3a3a3;font-size:16px">Spectrum UI Contact Form</p>
+            <p style="margin:8px 0 0;color:#a3a3a3;font-size:16px">Imoogle UI Contact Form</p>
           </div>
           
           <!-- Content -->
@@ -127,7 +127,7 @@ export async function POST(request: NextRequest) {
             ${summaryTable}
             
             <div style="margin-top:32px;padding:20px;background:#fafafa;border-radius:8px;text-align:center">
-              <p style="margin:0;color:#737373;font-size:14px">This email was automatically generated from your Spectrum UI contact form</p>
+              <p style="margin:0;color:#737373;font-size:14px">This email was automatically generated from your Imoogle UI contact form</p>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ export async function POST(request: NextRequest) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thank You - Spectrum UI</title>
+        <title>Thank You - Imoogle UI</title>
       </head>
       <body style="margin:0;padding:0;background-color:#fafafa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">
         <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
@@ -172,7 +172,7 @@ export async function POST(request: NextRequest) {
             
             <div style="margin-top:32px;padding:20px;background:#f5f5f5;border-radius:8px;text-align:center;border-top:1px solid #e5e5e5">
               <p style="margin:0 0 8px;color:#171717;font-size:16px;font-weight:600">Best regards,</p>
-              <p style="margin:0;color:#737373;font-size:14px">The Spectrum UI Team</p>
+              <p style="margin:0;color:#737373;font-size:14px">The Imoogle UI Team</p>
               <p style="margin:8px 0 0;color:#a3a3a3;font-size:12px">Building the future of web interfaces</p>
             </div>
           </div>
@@ -183,8 +183,8 @@ export async function POST(request: NextRequest) {
 
     // Send to admin/owner
     await resend.emails.send({
-      from: "onboarding@spectrumhq.in",
-      to: process.env.EMAIL || "arihantjain7000@gmail.com",
+      from: process.env.EMAIL_FROM || "onboarding@imoogleai.xyz",
+      to: process.env.EMAIL || "info@imoogleai.xyz",
       subject: `New ${purpose ? `${purpose} ` : ""}submission from ${safe(name) || "Unknown"}`,
       html: adminHtml,
     });
@@ -192,9 +192,9 @@ export async function POST(request: NextRequest) {
     // Send confirmation to user if email provided
     if (email && typeof email === "string") {
       await resend.emails.send({
-        from: "onboarding@spectrumhq.in",
+        from: process.env.EMAIL_FROM || "onboarding@imoogleai.xyz",
         to: email,
-        subject: "We received your message — Spectrum UI",
+        subject: "We received your message — Imoogle UI",
         html: userHtml,
       });
     }

@@ -166,7 +166,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <Icons.logo />
-                <span className="text-base font-semibold">Spectrum UI</span>
+                <span className="text-base font-semibold">Imoogle UI</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

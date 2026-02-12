@@ -14,7 +14,7 @@ export function AnimatedBadge() {
 
   return (
     <Link
-      href="https://vercel.com/oss"
+      href="https://imoogleai.xyz"
       className="group relative outline-none block rounded-full py-[5px] pr-3 pl-1.5 bg-[#eeeeee] dark:bg-[#161616] dark:shadow-inner dark:shadow-neutral-800/80 border border-neutral-400/20 dark:border-neutral-700/70"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -53,23 +53,9 @@ export function AnimatedBadge() {
       <div className="relative z-10 flex items-center justify-between px-2">
       
         <div className="flex items-center justify-center gap-2">
-            Backed by
-            <span className="flex items-center gap-2 justify-center">
-              <svg
-                height="13"
-                width="13"
-                strokeLinejoin="round"
-                viewBox="0 0 16 16"
-                aria-label="Vercel logo"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M8 1L16 15H0L8 1Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Vercel OSS
+            Crafted by
+            <span className="flex items-center gap-1.5 justify-center font-medium">
+              Imoogle Technology
             </span>
           </div>
           <ArrowRight className="h-4 w-4 ml-2" />

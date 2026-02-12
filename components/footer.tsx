@@ -1,53 +1,94 @@
 "use client";
 import Link from "next/link";
-
 import { Icons } from "./icon";
+import { Mail, Globe, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className=" py-12 px-4 md:px-6 z-50">
+    <footer className="border-t border-border/40 py-12 px-4 md:px-6 z-50">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="mb-8 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          {/* Brand Section */}
+          <div className="max-w-sm">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-              <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-white rounded-md flex items-center justify-center p-1">
-                <Icons.logo className="h-5 w-5 text-black " />
+              <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-foreground rounded-md flex items-center justify-center p-1">
+                <Icons.logo className="h-5 w-5 text-background" />
               </div>
-
-              <span className=" font-bold lg:inline-block">Spectrum UI</span>
+              <span className="font-bold lg:inline-block">Imoogle UI</span>
             </Link>
 
-            <h1 className="dark:text-gray-300 mt-4">
-              Build by{" "}
-              <span className="dark:text-[#039ee4] gap-2">
-                <Link className="underline" href="https://x.com/arihantCodes">@Arihantjain</Link>
-                <span>{" & "}</span>
-                <Link href="https://linkedin.com/in/itzamanjain" className="underline">
-                @itzamanjain
-                </Link>
-              </span>
-            </h1>
-           
-            <p className="text-sm dark:text-gray-400 mt-5">
-              © {new Date().getFullYear()} Spectrum UI. All rights reserved.
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              Premium UI component library crafted by Imoogle Technology. Build beautiful, 
+              accessible, and production-ready web applications faster.
             </p>
+
+            <div className="flex items-center gap-4 mt-6">
+              <Link
+                href="mailto:info@imoogleai.xyz"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Email us"
+              >
+                <Mail className="h-4 w-4" />
+                <span>info@imoogleai.xyz</span>
+              </Link>
+            </div>
+
+            <div className="flex items-center gap-3 mt-4">
+              <Link
+                href="https://imoogleai.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Visit Imoogle Technology website"
+              >
+                <Globe className="h-4 w-4" />
+              </Link>
+              <Link
+                href="https://x.com/imoogletechnology"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Follow Imoogle Technology on X"
+              >
+                <Icons.twitter className="h-3 w-3" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/imoogletechnology"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Follow Imoogle Technology on LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+          {/* Links Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-semibold mb-4">Pages</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">Product</h3>
+              <ul className="flex flex-col gap-3">
                 <li>
                   <Link
                     href="/docs"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Docs
+                    Documentation
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/docs/installation"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Getting Started
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/blocks"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Blocks
                   </Link>
@@ -55,49 +96,51 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/colors"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Colors
                   </Link>
                 </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Socials</h3>
-              <ul className="space-y-2">
                 <li>
                   <Link
-                    href="https://github.com/arihantcodes/spectrum-ui"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    href="/blog"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Github
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://www.linkedin.com/in/arihantcodes"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
-                  >
-                    LinkedIn
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://x.com/arihantcodes"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
-                  >
-                    X
+                    Blog
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">Company</h3>
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <Link
+                    href="https://imoogleai.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Imoogle Technology
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="mailto:info@imoogleai.xyz"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">Legal</h3>
+              <ul className="flex flex-col gap-3">
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Privacy Policy
                   </Link>
@@ -105,7 +148,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/tos"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Terms of Service
                   </Link>
@@ -114,9 +157,21 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className=" w-full flex mt-4 items-center justify-center   ">
-          <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 select-none">
-            SPECTRUM UI
+
+        {/* Divider */}
+        <div className="border-t border-border/40 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Imoogle Technology. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Imoogle UI is a proprietary product of Imoogle Technology.
+          </p>
+        </div>
+
+        {/* Large Brand Text */}
+        <div className="w-full flex mt-8 items-center justify-center">
+          <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 dark:from-neutral-600 dark:to-neutral-800 select-none">
+            IMOOGLE UI
           </h1>
         </div>
       </div>

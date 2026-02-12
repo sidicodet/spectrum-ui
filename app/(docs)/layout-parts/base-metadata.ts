@@ -41,7 +41,7 @@ export function baseMetadata({
   twitter,
   article,
 }: BaseMetadataProps): Metadata {
-  const fullTitle = title ? `${title} - Spectrum UI` : siteConfig.name;
+  const fullTitle = title ? `${title} - Imoogle UI` : siteConfig.name;
   const fullDescription = description || siteConfig.description;
   const url = canonicalUrl || siteConfig.url;
   
@@ -86,15 +86,16 @@ export function baseMetadata({
     
     // Action Keywords
     "copy paste components",
-    "free UI components",
-    "open source UI library",
+    "premium UI components",
     "ready-to-use components",
+    "Imoogle UI",
+    "Imoogle Technology",
     
     // Alternatives
     "shadcn alternative",
     "Material UI alternative",
     "Chakra UI alternative",
-    "best UI library 2024",
+    "best UI library",
     
     ...siteConfig.keywords,
   ];
@@ -104,11 +105,11 @@ export function baseMetadata({
     description: fullDescription,
     keywords: seoKeywords,
     authors: [
-      { name: "Arihant Jain", url: "https://ui.spectrumhq.in/" },
-      { name: "Spectrum UI", url: siteConfig.url },
+      { name: "Imoogle Technology", url: "https://imoogleai.xyz" },
+      { name: "Imoogle UI", url: siteConfig.url },
     ],
-    creator: "Arihant Jain",
-    publisher: "Spectrum UI",
+    creator: "Imoogle Technology",
+    publisher: "Imoogle UI",
     alternates: {
       canonical: url,
     },
@@ -136,8 +137,8 @@ export function baseMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      site: "@spectrumui",
-      creator: "@arihantcodes",
+      site: "@imoogleui",
+      creator: "@imoogletechnology",
       title: twitter?.title || fullTitle,
       description: twitter?.description || fullDescription,
       images: twitter?.images || [ogImageUrl],
