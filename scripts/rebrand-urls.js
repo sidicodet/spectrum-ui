@@ -5,10 +5,11 @@ const replacements = [
   // URL replacements
   ['https://ui.spectrumhq.in', 'https://ui.imoogleai.xyz'],
   ['https://spectrumhq.in', 'https://imoogleai.xyz'],
+  ['spectrumhq.in', 'imoogleai.xyz'],
   // Brand name replacements
   ['Spectrum UI', 'Imoogle UI'],
   ['spectrum-ui', 'imoogle-ui'],
-  // Author replacements
+  // Author replacements  
   ['Arihant Jain', 'Imoogle Technology'],
   ['arihantcodes', 'imoogletechnology'],
   ['@arihantcodes', '@imoogletechnology'],
@@ -54,11 +55,12 @@ async function main() {
     if (content !== original) {
       await writeFile(file, content, 'utf-8');
       totalChanges++;
-      console.log(`Updated: ${file.replace(root + '/', '')}`);
+      console.log('Updated: ' + file.replace(root + '/', ''));
     }
   }
   
-  console.log(`\nTotal files updated: ${totalChanges}`);
+  console.log('');
+  console.log('Total files updated: ' + totalChanges);
 }
 
 main().catch(console.error);
